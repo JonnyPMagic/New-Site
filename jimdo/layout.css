@@ -1,0 +1,39 @@
+/* Jimdo Creator – CSS zum Layout (Design → Layout → CSS).
+   Übernimmt Farben und Schriften der neuen Website. */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600&display=swap");
+
+body { margin: 0; background: #0d0b14; color: #ece8f4; font-family: "Inter", system-ui, sans-serif; font-size: 17px; line-height: 1.65; }
+a { color: #f1d898; }
+a:hover { color: #d9b45a; }
+h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; line-height: 1.15; color: #ece8f4; }
+h1 { font-size: 3.2em; } h2 { font-size: 2.3em; } h3 { font-size: 1.6em; }
+
+.jpm-container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.jpm-header { position: sticky; top: 0; z-index: 50; background: rgba(13,11,20,.92); border-bottom: 1px solid rgba(255,255,255,.08); }
+.jpm-header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 70px; flex-wrap: wrap; }
+.jpm-logo { font-family: "Cormorant Garamond", serif; font-size: 1.6em; font-weight: 700; color: #ece8f4; text-decoration: none; }
+.jpm-logo span { color: #d9b45a; }
+
+.jpm-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 24px; }
+.jpm-nav a { color: #ece8f4; text-decoration: none; }
+.jpm-nav a:hover, .jpm-nav .current a { color: #d9b45a; }
+
+.jpm-main { padding: 60px 0; background: radial-gradient(ellipse at 70% 0%, rgba(123,92,255,.25), transparent 50%); }
+.jpm-sidebar { background: #151221; padding: 40px 0; }
+.jpm-footer { border-top: 1px solid rgba(255,255,255,.06); padding: 30px 0; color: #a9a2bd; font-size: .9em; }
+.jpm-footer a { color: #a9a2bd; }
+
+/* Jimdo-Buttons & Formulare im neuen Stil */
+input, textarea, select { background: #1c1830 !important; color: #ece8f4 !important; border: 1px solid rgba(255,255,255,.15) !important; border-radius: 10px !important; padding: 12px !important; }
+input[type="submit"], button, .j-calltoaction-link {
+  background: linear-gradient(135deg, #f1d898, #d9b45a) !important; color: #1a1407 !important;
+  border: 0 !important; border-radius: 999px !important; padding: 12px 26px !important; font-weight: 600 !important;
+}
+img { max-width: 100%; height: auto; border-radius: 10px; }
+
+@media (max-width: 760px) {
+  .jpm-header { position: static; }
+  .jpm-header-inner { flex-direction: column; padding: 14px 0; gap: 10px; }
+  .jpm-nav ul { justify-content: center; }
+  h1 { font-size: 2.4em; }
+}
